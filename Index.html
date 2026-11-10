@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minimarket La Esquina</title>
+<style>
+* {box-sizing:border-box}
+body {
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#f5f7ed;
+  color:#202820;
+}
+header {
+  background:#176b38;
+  color:white;
+  padding:25px 18px;
+  text-align:center;
+}
+header h1 {font-size:30px;margin:8px}
+header p {margin:8px}
+nav {
+  background:#f5c542;
+  padding:13px;
+  text-align:center;
+}
+nav a {
+  color:#183b23;
+  text-decoration:none;
+  font-weight:bold;
+  margin:0 12px;
+}
+.hero {
+  padding:55px 20px;
+  text-align:center;
+  background:#dff1d9;
+}
+.hero h2 {font-size:32px}
+.hero p {font-size:17px}
+.btn {
+  display:inline-block;
+  background:#176b38;
+  color:white;
+  padding:14px 24px;
+  border-radius:25px;
+  text-decoration:none;
+  font-weight:bold;
+}
+.container {padding:30px 18px;max-width:1000px;margin:auto}
+.products {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(145px,1fr));
+  gap:16px;
+}
+.card {
+  background:white;
+  border-radius:15px;
+  padding:20px 12px;
+  text-align:center;
+  box-shadow:0 3px 12px #00000012;
+}
+.card .emoji {font-size:45px}
+.price {color:#176b38;font-weight:bold;font-size:19px}
+footer {
+  background:#176b38;
+  color:white;
+  padding:25px;
+  text-align:center;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🏪 MINIMARKET LA ESQUINA</h1>
+  <p>¡Todo lo que necesitas, cerca de ti!</p>
+</header>
+
+<nav>
+  <a href="#inicio">Inicio</a>
+  <a href="#productos">Productos</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+<section class="hero" id="inicio">
+  <h2>¡Bienvenido a nuestra tienda!</h2>
+  <p>Calidad, buenos precios y productos para todos los días.</p>
+  <a href="#productos" class="btn">Ver productos</a>
+</section>
+
+<main class="container" id="productos">
+  <h2>🛒 Nuestros productos</h2>
+  <div class="products">
+
+    <div class="card">
+      <div class="emoji">🥛</div>
+      <h3>Leche</h3>
+      <p>Leche entera</p>
+      <div class="price">$4.000 COP</div>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🍞</div>
+      <h3>Pan</h3>
+      <p>Pan fresco</p>
+      <div class="price">$3.000 COP</div>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🥚</div>
+      <h3>Huevos</h3>
+      <p>Huevos por unidad</p>
+      <div class="price">$700 COP</div>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🥤</div>
+      <h3>Gaseosas</h3>
+      <p>Bebidas refrescantes</p>
+      <div class="price">$3.500 COP</div>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🍫</div>
+      <h3>Chocolates</h3>
+      <p>Dulces y golosinas</p>
+      <div class="price">$2.000 COP</div>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🍚</div>
+      <h3>Arroz</h3>
+      <p>Productos de mercado</p>
+      <div class="price">$4.500 COP</div>
+    </div>
+
+  </div>
+</main>
+
+<section class="container" id="contacto">
+  <h2>📲 Contacto</h2>
+  <p>¿Quieres conocer nuestros productos?</p>
+  <p>WhatsApp: número del establecimiento</p>
+  <p>Dirección: ubicación de la tienda</p>
+</section>
+
+<footer>
+  <h3>MINIMARKET LA ESQUINA</h3>
+  <p>¡Gracias por visitarnos!</p>
+  <small>Proyecto de demostración comercial</small>
+</footer>
+
+</body>
+</html>
